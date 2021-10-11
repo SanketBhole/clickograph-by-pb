@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PB Creations</title>
+
+	<!-- Meta Tag -->
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Animate CSS Link -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<!-- Hover CSS Link -->
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+
+	<!-- Fontawesome Icons CSS Link -->
+	<link rel="stylesheet" type="text/css" href="fa-icon_v6_pro/css/all.css">
+
+	<!-- Site Logo -->
+	 <link rel="icon" type="image/png" href="images/favicon.jpg">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+	<!-- CSS -->
+	<style type="text/css">
+		body{
+			font-family:Maiandra GD;
+			background-image: url(images/background4.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			animation-duration: 500ms;
+			
+		}
+		.text-C0C0C0{
+			color:#C0C0C0;
+		}
+		.container{
+			margin-top: 200px;
+		}
+		#navigation .text1{
+			font-size: 2.5rem;
+		}
+		#navigation .text2{
+			font-size: 20px;
+		}
+		#navigation a:hover{
+			color:white;
+		}
+		#icons a{
+			font-size: 30px;
+		}
+		.modal{
+			background-image: url(images/abtback.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.modal-content{
+			background-color: transparent;	
+			border:none; 
+		}
+		.modal-header{
+			border:none;
+		}
+		hr{
+			height: 4px;
+			background-image: radial-gradient(white,white,white,grey,grey,black,black,black)
+		}
+		#submit a{
+			text-decoration: none;
+			border:2px #C0C0C0 solid;
+		}
+		#submit a:hover{
+			color:white;
+			border:2px white solid;
+		}
+	</style>
+</head>
+<body class="wow fadeIn" onload="myFunction()">
+<!-- Body Start -->
+	<div class="container float-sm-right" id="navigation" >
+		<div class="row justify-content-center">
+			<img src="images/favicon.jpg" width="100" height="100">
+		</div>
+		<div class="row justify-content-center">
+			<h3 class="text2 text-C0C0C0 mb-0">PHOTOGRAPHY</h3>
+		</div>
+		<nav class="navbar navbar-expand-md justify-content-center">
+  			<a class="navbar-toggler text-C0C0C0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		Menu
+    		</a>
+  			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    			<ul class="navbar-nav">
+      				<li class="nav-item text-center">
+       	 				<a class="nav-link text-C0C0C0" href="about.html">About</a>
+      				</li>
+      				<li class="nav-item text-center">
+        				<a class="nav-link text-C0C0C0" href="portfolio.html">Portfolio</a>
+      				</li>
+      				<li class="nav-item text-center">
+      	 				<a class="nav-link text-C0C0C0" href="contact.html">Contact</a>
+      				</li>    
+    			</ul>
+  			</div>  
+		</nav>
+		<div class="text-center" id="icons">
+			<a class=" text-C0C0C0" target="_blank" href="https://www.facebook.com/">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+			<a class=" text-C0C0C0" target="_blank" href="https://www.instagram.com/" id="insta">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+		</div>
+	</div>
+
+
+<!-- Modal Apears On Page Load -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title text-C0C0C0 text-center">Lets Connect</h2>
+        <hr>
+		<form class="px-4">
+			<div class="form-group my-3">
+    		   	<input type="text" class="form-control" placeholder="Enter Name">
+  			</div>
+			<div class="form-group my-3">
+    		   	<input type="email" class="form-control" placeholder="Enter Email">
+  			</div>
+			<div class="form-group my-3">
+    			<textarea class="form-control" rows="2" placeholder="Enter Message"></textarea>
+  			</div>
+  			<hr>
+  			<div class="form-group my-4 text-center" id="submit">
+  				<h4><a class="text-C0C0C0 px-4 py-1 rounded" href="#">Submit</a></h4>
+  			</div>
+  		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wow Js File -->
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script src="js/wow.js"></script>
+<script>
+   wow= new WOW({}).init();
+</script>
+
+<!-- Script For Modal -->
+<script type="text/javascript">
+	setTimeout(function myFunction() { $('#myModal').modal('show'); },3000)
+</script>
+
+</body>
+</html>

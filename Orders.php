@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST['name'])){
     // // Set connection variables
-    $server = "sql210.unaux.com";
-    $username = "unaux_29969394";
-    $password = "1237898792951Sanket";
+    // $server = "sql210.unaux.com";
+    // $username = "unaux_29969394";
+    // $password = "1237898792951Sanket";
 
-    // $server = "localhost";
-    // $username = "root";
-    // $password = "";
+    $server = "localhost";
+    $username = "root";
+    $password = "";
 
     // Create a database connection
     $con = mysqli_connect($server, $username, $password);
